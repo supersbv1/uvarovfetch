@@ -1,0 +1,20 @@
+#!/bin/bash
+
+CORE_INF=$(uname -r)
+MACHINE_TYPE=$(uname -m)
+MACHINE_NAME=$(uname -n)
+
+NC="\e[0m"
+
+
+OS=$(uname -o)
+OS_DIST=$(uname -r)
+
+echo -e "\033[97m-----------------------------------------${NC}"
+echo -e "\033[93mUvaros PC discription"
+echo  "Machine name: $MACHINE_NAME"
+echo  "About system: $OS"
+echo  "Architecture: $MACHINE_TYPE"
+echo  "Kernel version: $CORE_INF"
+echo  "Uvarov OS is proprietary system"
+echo -e "\033[97m-----------------------------------------${NC}"
